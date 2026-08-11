@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KROL Edificación Estructural · Sitio en construcción</title>
+<meta name="description" content="KROL Edificación Estructural S.A. de C.V. — obra civil, cimentaciones, muros de contención y estructuras de concreto en Guadalajara y toda la república. Nuestro sitio está en construcción; cotiza por WhatsApp.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/logo-krol.png">
+<meta property="og:title" content="KROL Edificación Estructural">
+<meta property="og:description" content="Obra civil y estructuras de concreto. Sitio en construcción — cotiza por WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Michroma&family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --naranja:#F97316;
+  --durazno:#FDBA74;
+  --fondo:#0D1117;
+  --tinta:#12161D;
+  --tarjeta:#161B23;
+  --concreto:#E8EAED;
+  --cimbra:#9AA2AD;
+  --borde:rgba(255,255,255,.08);
+  --disp:'Black Ops One',sans-serif;
+  --tecno:'Michroma',sans-serif;
+  --cond:'Barlow Condensed',sans-serif;
+  --cuerpo:'Barlow',sans-serif;
+  --franja:repeating-linear-gradient(-45deg,var(--naranja) 0 14px,var(--tinta) 14px 28px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;min-height:100vh;background:var(--fondo);color:var(--concreto);
+  font-family:var(--cuerpo);display:flex;flex-direction:column;
+  position:relative;overflow-x:hidden;
+}
+/* retícula de plano */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    linear-gradient(rgba(249,115,22,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(249,115,22,.055) 1px,transparent 1px);
+  background-size:32px 32px;
+  mask-image:radial-gradient(ellipse 90% 70% at 50% 40%,#000 40%,transparent 100%);
+  -webkit-mask-image:radial-gradient(ellipse 90% 70% at 50% 40%,#000 40%,transparent 100%);
+}
+.franja{height:8px;background:var(--franja);position:relative;z-index:2}
+
+main{
+  flex:1;position:relative;z-index:1;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:56px 24px 40px;gap:0;
+}
+.logo{width:min(300px,72vw);margin-bottom:38px}
+
+.estado{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--tecno);font-size:clamp(9px,2.2vw,11px);letter-spacing:.28em;
+  text-transform:uppercase;color:var(--naranja);
+  border:1px solid rgba(249,115,22,.35);padding:9px 16px;margin-bottom:26px;
+}
+.punto{width:7px;height:7px;background:var(--naranja);border-radius:50%;animation:late 1.8s ease-in-out infinite}
+@keyframes late{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.82)}}
+
+h1{
+  font-family:var(--disp);font-weight:400;line-height:1.1;margin:0 0 20px;
+  font-size:clamp(30px,6.4vw,60px);text-wrap:balance;
+}
+h1 .nar{
+  background:linear-gradient(90deg,var(--naranja),var(--durazno));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.sub{
+  font-family:var(--cuerpo);font-size:clamp(15.5px,2.4vw,18px);line-height:1.65;
+  color:var(--cimbra);max-width:56ch;margin:0 auto 14px;
+}
+.mientras{
+  font-family:var(--cond);font-weight:600;text-transform:uppercase;letter-spacing:.14em;
+  font-size:clamp(13px,2vw,15px);color:var(--concreto);margin:22px 0 22px;
+}
+
+.acciones{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-bottom:38px}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+  font-family:var(--cond);font-weight:700;text-transform:uppercase;letter-spacing:.08em;
+  font-size:clamp(14px,2vw,16px);padding:15px 28px;border:2px solid var(--naranja);
+  transition:background .25s,color .25s,transform .25s;
+}
+.btn--wa{background:var(--naranja);color:#0D1117}
+.btn--wa:hover,.btn--wa:focus-visible{background:transparent;color:var(--naranja);transform:translateY(-2px)}
+.btn--tel{background:transparent;color:var(--naranja)}
+.btn--tel:hover,.btn--tel:focus-visible{background:var(--naranja);color:#0D1117;transform:translateY(-2px)}
+.btn svg{width:19px;height:19px;fill:currentColor;flex:none}
+a:focus-visible{outline:2px solid var(--durazno);outline-offset:3px}
+
+.datos{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;
+  background:var(--borde);border:1px solid var(--borde);
+  width:min(760px,100%);
+}
+.dato{background:var(--tarjeta);padding:18px 20px;text-align:left}
+.dato .k{
+  display:block;font-family:var(--tecno);font-size:8.5px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--naranja);margin-bottom:6px;
+}
+.dato .v{font-size:14.5px;color:var(--concreto);line-height:1.5}
+.dato a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(249,115,22,.4)}
+.dato a:hover{color:var(--naranja)}
+
+footer{
+  position:relative;z-index:1;border-top:1px solid var(--borde);
+  padding:20px 24px;text-align:center;
+  font-family:var(--tecno);font-size:8.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--cimbra);
+}
+@media (prefers-reduced-motion:reduce){
+  .punto{animation:none}
+  .btn{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="franja"></div>
+
+<main>
+  <img class="logo" src="img/logo-krol.png" alt="KROL Edificación Estructural S.A. de C.V.">
+
+  <span class="estado"><span class="punto"></span>Sitio en construcción</span>
+
+  <h1>Estamos construyendo <span class="nar">algo</span></h1>
+
+  <p class="sub">
+    Nuestro nuevo sitio está en obra. Muy pronto vas a poder ver aquí el portafolio
+    completo de KROL: cimentaciones, muros de contención, estructuras de concreto y
+    obra civil para proyectos industriales, comerciales y habitacionales.
+  </p>
+
+  <p class="mientras">Mientras tanto, cotiza tu proyecto directo con nosotros</p>
+
+  <div class="acciones">
+    <a class="btn btn--wa" href="https://wa.me/523324093470" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.27.86 5.82 2.42a8.19 8.19 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.26-8.24m-2.5 4.07c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.34.99 2.5c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.45-1.35-1.69-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.79-.19-.46-.39-.4-.54-.41h-.47Z"/></svg>
+      Cotizar por WhatsApp
+    </a>
+    <a class="btn btn--tel" href="tel:+523324093470">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2Z"/></svg>
+      33 2409 3470
+    </a>
+  </div>
+
+  <div class="datos">
+    <div class="dato">
+      <span class="k">Correo</span>
+      <span class="v"><a href="mailto:krol.presupuestos@outlook.com">krol.presupuestos@outlook.com</a></span>
+    </div>
+    <div class="dato">
+      <span class="k">Horario</span>
+      <span class="v">Lunes a sábado · 9:00 — 17:30</span>
+    </div>
+    <div class="dato">
+      <span class="k">Ubicación</span>
+      <span class="v">Tlaquepaque, Jalisco · Cobertura nacional</span>
+    </div>
+  </div>
+</main>
+
+<footer>© 2026 KROL Edificación Estructural S.A. de C.V. · ¡Construyendo soluciones!</footer>
+</body>
+</html>
